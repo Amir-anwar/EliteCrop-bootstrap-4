@@ -14,10 +14,7 @@ body {
   color: #ffffff;
 }
 .upper-bar .info {
-  margin: 15px 0;
-}
-.upper-bar .info:first-of-type {
-  padding-top: 3px;
+  margin: 15px 0px;
 }
 .upper-bar i {
   margin: 0 1px;
@@ -545,6 +542,10 @@ body {
   }
   .choose-us .row div:last-child h2, .choose-us .row div:last-child p, .choose-us .row div:last-child .read-more {
     margin-left: 0;
+  }
+  .choose-us .row div:last-child h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 }
 /* End Choose-US */
