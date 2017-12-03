@@ -59,7 +59,6 @@ body {
 .navbar-nav .nav-link {
   font-size: 20px;
   font-weight: 400;
-  text-transform: uppercase;
   margin-left: 16px;
   color: #08526d !important;
 }
@@ -135,7 +134,7 @@ body {
   .slider h1 {
     max-width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 33px;
     left: auto;
     margin-left: auto;
   }
@@ -170,9 +169,6 @@ body {
 .overview h2 {
   color: #060612;
   font-weight: 500;
-}
-.overview h2, .overview button {
-  text-transform: uppercase;
 }
 .overview p {
   color: #71787c;
@@ -216,6 +212,12 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .overview p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 /* End Overview */
 /* Start Featured Work */
 .featured-work {
@@ -243,7 +245,7 @@ body {
   color: #08526d;
   border: 2px solid #08526d;
   padding: 10px 20px;
-  margin: 0 0 10px 10px;
+  margin: 0 10px 10px 10px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -273,6 +275,19 @@ body {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .featured-work {
+    padding: 100px 0;
+  }
+  .featured-work h2 {
+    font-size: 30px;
+  }
+  .featured-work p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
 /* End Featured Work */
 /* Start Latest Post */
 .latest-post {
@@ -399,6 +414,28 @@ body {
   background-color: #ec1c23;
 }
 
+@media (max-width: 768px) {
+  .testimonials .testi-slider .carousel-caption h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .testimonials .testi-slider .carousel-caption h3 + span {
+    font-size: 13px;
+  }
+  .testimonials .testi-slider .carousel-caption p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+  .testimonials .carousel-control-prev .carousel-n-p-con,
+  .testimonials .carousel-control-next .carousel-n-p-con {
+    background-color: transparent;
+  }
+  .testimonials .carousel-control-prev .carousel-n-p-con:hover,
+  .testimonials .carousel-control-next .carousel-n-p-con:hover {
+    background-color: transparent;
+  }
+}
 /* End Testimonials */
 /* Start Pricing-Taple */
 .pricing-taple {
@@ -590,7 +627,6 @@ body {
   padding: 6px 15px 8px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
 }
 .contact-us a.contact-btn:hover {
   text-decoration: none;
